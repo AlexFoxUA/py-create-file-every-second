@@ -8,7 +8,7 @@ def main() -> None:
         timestamp = now.strftime("%Y-%m-%d %H:%M:%S")
         file_name = f"app-{now.hour:02d}_{now.minute:02d}_{now.second:02d}.log"
 
-        with open(file_name, 'w') as f:
+        with open(file_name, "w") as f:
             f.write(timestamp)
 
         print(f"{timestamp} {file_name}")
